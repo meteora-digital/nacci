@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fff 0%, #fff 40%, #4a4949 60%, #4a4949 100%);
+}
+
+.banner {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    table-layout: fixed;
+}
+
+.banner__media {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner__image > img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+.banner__content {
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: 200px;
+}
+
+.banner__content img {
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        background: linear-gradient(to bottom, #fff 0%, #fff 40%, #4a4949 60%, #4a4949 100%);
+    }
+
+    .banner__media {
+        display: table-row;
+    }
+
+    .banner__image {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 40px;
+    }
+
+    .banner__content {
+        margin-top: 40px;
+    }
+
+    .banner__text img {
+        max-width: 60%;
+    }
+}
